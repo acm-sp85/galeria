@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+  <link rel="stylesheet" href="css/main.css">
+  <meta charset="utf-8">
+
+</head>
+
+<body>
+<h1>Alex Contell Portfolio</h1>
+<div class="container">
+  
+  <img id="imagen" src="imgs/1.jpg" onclick="myFunction()">
+
+
+</div>
+
+<script>
+
+
+//MANUALLY INSERTING PICS INTO ARRAY//
+var counter = 0;
+var fotos =["imgs/1.jpg","imgs/2.jpg","imgs/3.jpg","imgs/4.jpg","imgs/5.jpg"];
+console.log(counter);
+function myFunction() {
+
+if ( counter < 4){
+  counter++;
+  document.getElementById("imagen").src = fotos[counter];
+
+  console.log(counter);
+} else {
+
+  counter = 0;
+  document.getElementById("imagen").src = fotos[counter];
+}
+   
+}
+
+//AUTOMATICALLY ADDING PICS FROM FOLDER INTO AN ARRAY//
+    
+
+
+
+</script>
+
+<header>
+
+
+</body>
+</html>
